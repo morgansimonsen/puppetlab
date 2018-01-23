@@ -5,7 +5,7 @@ class custom1 (
   $root_password =  'SecretValue'
 ) {
   # resources
-  notice ("${root_password}")
+  notify {"hello world ${root_password}":}
 }
 
 class { 'custom1': }
