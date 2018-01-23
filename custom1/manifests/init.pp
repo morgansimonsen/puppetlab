@@ -2,7 +2,7 @@
 #
 #
 class custom1 (
-  $root_password =  'SecretValue'
+  String  $root_password =  'SecretValue',
 ) {
   # resources
   notify {"hello world ${root_password}":}
