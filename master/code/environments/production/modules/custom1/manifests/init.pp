@@ -11,6 +11,11 @@ class custom1 (
     ensure  => 'present',
     content => "${root_password}",
   }
+
+  file { '/tmp/secretfile.txt':
+    ensure  => 'present',
+    content => "${root_password}",
+  }
 }
 
 class { 'custom1': }
